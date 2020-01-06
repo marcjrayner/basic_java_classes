@@ -20,6 +20,11 @@ public class CalculatorTest {
 
     @Test
     public void canSubtract() {
-        assertEquals(10.4, calculator.subtract(15.5, 5.1));
+        assertEquals(10.4, calculator.subtract(15.5, 5.1), 0.01);
+    }
+
+    @Test
+    public void canMultiply() {
+        assertEquals(5.0, calculator.multiply(2.5, 2), 0.01);
     }
 }
